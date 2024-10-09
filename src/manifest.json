@@ -1,24 +1,24 @@
 {
-    "manifest_version": 3,
-    "name": "popup",
-    "description": "Base Level Extension",
-    "version": "1.0",
-    "background": {
-        "service_worker": "background.js"
-    },
-    "commands": {
-        "open-popup": {
-            "suggested_key": {
-                "default": "Ctrl+Shift+P",
-                "mac": "Command+Shift+P"
-            },
-            "description": "Open terminal"
-        }
-    },
-    "action": {
-        "default_popup": "popup.html"
-    },
-    "permissions": [
-        "commands"
-    ]
+  "manifest_version": 3,
+  "name": "popup",
+  "description": "Base Level Extension",
+  "version": "1.0",
+  "background": {
+    "service_worker": "background.js"
+  },
+  "commands": {
+    "open-popup": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+P",
+        "mac": "Command+Shift+P"
+      },
+      "description": "Open terminal"
+    }
+  },
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "commands"
+  ]
 }
