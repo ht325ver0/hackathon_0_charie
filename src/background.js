@@ -1,5 +1,9 @@
 chrome.commands.onCommand.addListener((command) => {
-    if (command === "open-popup") {
-        chrome.action.openPopup(); // ポップアップを開く
+    
+  
+    if(command === "open-popup") {
+      chrome.action.openPopup();
+      isTerminalMode = true;
     }
-});
+    
+  });
