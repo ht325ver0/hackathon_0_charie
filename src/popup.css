@@ -1,6 +1,6 @@
 body{
-  width: 500px;   /* 幅が800を超えている */
-  height: 500px;
+  width: 250px;   /* 幅が800を超えている */
+  height: 200px;
 
 }
 #popup{
@@ -9,8 +9,9 @@ body{
 
   padding : 8px;
 
-  background-color : #000;
-  box-shadow : -2px -2px 16px #ddd;
+  background-color : #1f1f1f;
+  box-shadow : -2px -2px 16px #1e1e1e;
+  border-radius: 10px;
 
   position : fixed;
   bottom : 0;
