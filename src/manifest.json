@@ -9,8 +9,8 @@
     "commands": {
         "open-popup": {
             "suggested_key": {
-                "default": "Ctrl+Shift+P",
-                "mac": "Command+Shift+P"
+                "default": "Alt+Q",
+                "mac": "Command+Shift+Z"
             },
             "description": "Open terminal"
         }
