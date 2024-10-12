@@ -43,4 +43,23 @@
 </ul>
 I'm fine という文が自動的に日本語に翻訳され、翻訳結果が表示される。
 
+<h2>version:1.2(10/12)</h2>
+<h3>概要</h3>
+<p1>コマンドの追加、およびUIの改善をしました！</p1>
+<ul>
+  <li>`help` : 登録されてるコマンド一覧が表示される</li>
+  <li>`make [任意のコマンド名] [URL]` : 任意のコマンドを登録できる</li>
+  <li>`rm [任意のコマンド名]` : 任意のコマンドを削除できる</li>
+</ul>
+<h3>例</h3>
+<ul>
+  <li>`make mygit https://github.com/ht325ver0/hackathon_0_charie/edit/main/README.md#L44C38` </li>
+</ul>
+mygitというコマンドが追加され、このコマンドを打つことで登録したURLに飛ぶことができる。
+<ul>
+  <li>`rm mygit` </li>
+</ul>
+mygitというコマンドが削除され、呼び出せなくなる。
+
+
   
