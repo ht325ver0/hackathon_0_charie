@@ -29,4 +29,4 @@ chrome.commands.onCommand.addListener((command) => {
       console.warn(`Unsupported command: ${command}`);
     }
   }
-});
+  });

@@ -38,7 +38,7 @@ class Terminal {
   }
   add_new_prompt(){
     const newPrompt = document.createElement('div');
-    newPrompt.innerHTML = `<span style="color:white">Chrome > ${this.inputer.value}</span>`;
+    newPrompt.innerHTML = `<span style="color:#1f1f1f">Chrome > ${this.inputer.value}</span>`;
     
     document.body.appendChild(newPrompt); // 新しい行を追加
 
@@ -50,7 +50,6 @@ class Terminal {
 }
 
 var terminal = new Terminal();
-
 
 
 

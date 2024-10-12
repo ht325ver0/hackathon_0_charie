@@ -1,22 +1,22 @@
 body{
   width: 250px;   /* 幅が800を超えている */
-  height: 200px;
-
+  height: 75px;
+  background-color : #1f1f1f;
+  border-radius: 10px;
 }
+
 #popup{
   width: 400px;   /* 幅が800を超えている */
-  height: 400px;
+  height: 100px;
 
   padding : 8px;
 
   background-color : #1f1f1f;
   box-shadow : -2px -2px 16px #1e1e1e;
-  border-radius: 10px;
+  border-radius: 10px 10x 10x 10x;
 
   position : fixed;
   bottom : 0;
   right : 0;
   font-size : 13px;
 }
-
-
