@@ -4,21 +4,23 @@
     "description": "Base Level Extension",
     "version": "1.0",
     "background": {
-        "service_worker": "background.js"
+      "service_worker": "background.js"
     },
     "commands": {
-        "open-popup": {
-            "suggested_key": {
-                "default": "Alt+Q",
-                "mac": "Command+Shift+Z"
-            },
-            "description": "Open terminal"
-        }
+      "open-popup": {
+        "suggested_key": {
+          "default": "Alt+Q",
+          "mac": "Command+Shift+P"
+        },
+        "description": "Open terminal"
+      }
     },
     "action": {
-        "default_popup": "popup.html"
+      "default_popup": "popup.html"
     },
     "permissions": [
-        "commands"
+      "commands",
+      "tabs",
+      "storage"
     ]
-}
+  }

@@ -1,3 +1,5 @@
+import { getTranslationUrl } from "./trCommand.js";
+
 export function isValidInput(input){
     const urlMap = {
         'home': 'https://www.google.com',
@@ -15,13 +17,22 @@ export function isValidInput(input){
         'gemini' : 'https://gemini.google.com/',
         'dino' : 'chrome://dino/',
     };
-    Object.entries(urlMap).forEach(([key, value]) => {
-      if(input == key) {
+    const spInput = input.trim().split(/\s+/);
+    const command = spInput[0];
+    const query = spInput.slice(1).join(' '); 
 
-        const targetUrl = value;
-        if(targetUrl) {
-          chrome.tabs.create({ url: targetUrl });
-        }
+    Object.entries(urlMap).forEach(([key, value]) => {
+        
+        if(command === key) {
+            const targetUrl = value;
+            if(command === 'key' && query){
+                targetUrl += getTranslationUrl(query);
+                
+            }
+            else if(targetUrl) {
+                chrome.tabs.create({ url: targetUrl });
+                alert("query");
+            }
         else {
           console.warn(`Unsupported command: ${command}`);
         }
